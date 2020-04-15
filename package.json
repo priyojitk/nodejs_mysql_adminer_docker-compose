@@ -1,0 +1,23 @@
+{
+  "name": "nodejs_mysql_adminer_docker-compose",
+  "version": "1.0.0",
+  "description": "nodejs mysql adminer docker-compose",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d build",
+    "start": "node build/index.js",
+    "dev": "./node_modules/.bin/nodemon --exec babel-node src/index.js"
+  },
+  "author": "priyojit kharibam",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.5",
+    "nodemon": "^2.0.3"
+  }
+}
